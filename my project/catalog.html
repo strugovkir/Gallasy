@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <title>Gallacy</title>
-    <body>
+    <title>catalog</title>
+  
+</head>
+<body>
         <header class="header">
-                     <a href="Logo">Здесь будет логотип</a>
+            <div class="toplogo"><img src="img\logo.png" alt="">
+                <a href="Logo"></a>
+            </div>
                      <nav class="header-nav">
-                            <ul>
+                            <ul class="nav-list">
                                 <li><a href="#">Каталог</a></li>
                                 <li><a href="#">Доставка и оплата</a></li>
                                 <li><a href="#">О компании</a></li>
@@ -31,7 +36,7 @@
                         </form>
                     <button class="button-slider">Давайте оба</button>
         </header>
-            <div class="container">
+        <div class="container">
                             <ul class="breadcrumbs">
                               <li><a href="#">Главная</a></li>
                               <li><a href="#">Каталог</a></li>
@@ -39,144 +44,145 @@
                             </ul>
         </div>
         <div class="title-item"><h1>Сливочное мороженое</h1></div>
-        <form action="" class="catalog-filter">
-                        <fildset>
-                            <p>Сортировка</p>
-                            <select name="" id="">
-                                <option value="">нет</option>
-                                <option value="">по популярности</option>
-                            </select>
-                      </fildset>
-                        <fildset>
-                            <legend>Цена:</legend>
-                            <input type="range" name="range-price">      
-                        </fildset>
-                        <fildset>
-                            <legend>Жирность</legend>
-                            <ul>
-                                    <li>
-                                      <input type="radio" name="src" value="acc" id="rad1">
-                                      <label for="rad1">0%</label>
-                                    </li>
-                                    <li>
-                                      <input type="radio" name="src" value="net" id="rad2">
-                                      <label for="rad2">до 10%</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" name="src" value="net" id="rad3">
-                                        <label for="rad3">до 30%</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" name="src" value="net" id="rad4">
-                                        <label for="rad4">выше 30%</label>
-                                    </li>
-                            </ul>
+        <form action="">
+        <fildset>
+        <p>Сортировка</p>
+            <select name="" id="">
+                <option value="">по алфавиту</option>
+                <option value="">по популярности</option>
+            </select>
+        </fildset>
+        <fildset>
+            <legend>Цена:</legend>
+            <input type="range" name="range-price">      
+        </fildset>
+        <fildset>
+            <legend>Жирность</legend>
+            <ul>
+                <li>
+                    <input type="radio" name="src" value="acc" id="rad1">
+                    <label for="rad1">0%</label>
+                </li>
+                <li>
+                    <input type="radio" name="src" value="net" id="rad2">
+                    <label for="rad2">до 10%</label>
+                </li>
+                <li>
+                    <input type="radio" name="src" value="net" id="rad3">
+                    <label for="rad3">до 30%</label>
+                </li>
+                <li>
+                    <input type="radio" name="src" value="net" id="rad4">
+                    <label for="rad4">выше 30%</label>
+                </li>
+            </ul>
                                
-                        </fildset>
-                        <fildset>
-                                <legend>Наполнители:</legend>
-                                <ul>
-                                  <li>
-                                    <input type="checkbox" id="ch1" name="chokolate">
-                                    <label for="ch1">Шоколадные</label>
-                                  </li>
-                                  <li>
-                                    <input type="checkbox" id="ch2" name="sugar">
-                                    <label for="ch2">Сахарные присыпки</label>
-                                  </li>
-                                  <li>
-                                    <input type="checkbox" id="ch3" name="fruits">
-                                    <label for="ch3">Фрукты</label>
-                                  </li>
-                                  <li>
-                                    <input type="checkbox" id="ch4" name="syrops">
-                                    <label for="ch4">Сиропы</label>
-                                  </li>
-                                  <li>
-                                    <input type="checkbox" id="ch5" name="jams">
-                                    <label for="ch5">Джемы</label>
-                                  </li>
-                                </ul>
-                        </fildset>
-                <button type="submit">Применить</button>
+        </fildset>
+        <fildset>
+            <legend>Наполнители:</legend>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="ch1" name="chokolate">
+                        <label for="ch1">Шоколадные</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="ch2" name="sugar">
+                        <label for="ch2">Сахарные присыпки</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="ch3" name="fruits">
+                        <label for="ch3">Фрукты</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="ch4" name="syrops">
+                        <label for="ch4">Сиропы</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="ch5" name="jams">
+                        <label for="ch5">Джемы</label>
+                    </li>
+                </ul>
+        </fildset>            
+        <button type="submit">Применить</button>
         </form>
-        <section class="catalog">
-                    <div class="item">
-                        <p class="title-item">Сливочное с апельсиновым джемом и циртусовой стружкой</p>
-                        <div class="price" id=""><p></p></div>
-                        <img src="img\1.png" alt="">
-                    </div>
-                    <div class="item">
-                        <p class="title-item">Сливочно-кофейное с кусочками шоколада</p>
-                        <div class="price" id=""><p></p></div>
-                        <img src="img\2.png" alt="">
-                    </div>
-                    <div class="item">
+       <section class="catalog">
+    <div class="item">
+        <p class="title-item">Сливочное с апельсиновым джемом и циртусовой стружкой</p>
+        <div class="price" id=""><p></p></div>
+        <img src="img\1.png" alt="">
+    </div>
+    <div class="item">
+        <p class="title-item">Сливочно-кофейное с кусочками шоколада</p>
+        <div class="price" id=""><p></p></div>
+        <img src="img\2.png" alt="">
+    </div>
+    <div class="item-list">
+                    <div>
                         <p class="title-item">Сливочно-клубничное с присыпкой из белого шоколада</p>
                         <div class="price" id=""><p></p></div>
                         <img src="img\3.png" alt="">
                     </div>
-                    <div class="item">
+                    <div>
                         <p class="title-item">Сливочное крем-брюле с карамельной подливкой</p>
                         <div class="price" id=""><p></p></div>
                         <img src="img\4.png" alt="">
                     </div>
-                        <div class="item">
+                        <div>
                         <p class="title-item">Сливочно-черничное с цельными ягодами черники</p>
                         <div class="price" id=""><p></p></div>
                         <img src="img\5.png" alt="">
                     </div>
-                        <div class="item">
+                        <div>
                         <p class="title-item">Сливочное с брусничным джемом</p>
                         <div class="price" id=""><p></p></div>
                         <img src="img\6.png" alt="">
                     </div>
-                    <div class="item">
+                    <div>
                             <p class="title-item">Сливочное с апельсиновым джемом и циртусовой стружкой</p>
                             <div class="price" id=""><p></p></div>
                             <img src="img\7.png" alt="">
                     </div>
-                    <div class="item">
+                    <div>
                             <p class="title-item">Сливочно-кофейное с кусочками шоколада</p>
                             <div class="price" id=""><p></p></div>
                             <img src="img\8.png" alt="">
                     </div>
-                    <div class="item">
+                    <div>
                             <p class="title-item">Сливочно-клубничное с присыпкой из белого шоколада</p>
                             <div class="price" id=""><p></p></div>
                             <img src="img\9.png" alt="">
                     </div>
-                     <div class="item">
+                     <div>
                             <p class="title-item">Сливочное крем-брюле с карамельной подливкой</p>
                             <div class="price" id=""><p></p></div>
                             <img src="img\10.png" alt="">
                     </div>
-                    <div class="item">
+                    <div>
                             <p class="title-item">Сливочно-черничное с цельными ягодами черники</p>
                             <div class="price" id=""><p></p></div>
                             <img src="img\11.png" alt="">
                     </div>
-                    <div class="item">
+                    <div>
                             <p class="title-item">Сливочное с брусничным джемом</p>
                             <div class="price" id=""><p></p></div>
                             <img src="img\12.png" alt="">
                     </div>
+    </div>
                   
-        </section>
+</section>
     <footer>
         <ul class="icon-smm">
-                        <li><a href="#" ></a></li>
-                        <li><a href="#" ></a></li>
-                        <li><a href="#" ></a></li>
-                        <li><a href="#" ></a></li>
+                        <li><a href="#"><img src="img/ВК.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/ФБ.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/insta.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/Твитер.png" alt=""></a></li>
         </ul>
         <ul class="information">
             <li>Для поставщиков</li>
             <li>О производителях</li>
             <li>Наши документы</li>
             <li>Экологичекие стандарты</li>
-        </ul>
+            
     </footer>
-    </body>    
-    </head>
+    </body>  
 </html>
