@@ -1,0 +1,147 @@
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    color: #000000;
+    background-color: #9cb0a5;
+    
+}
+img {
+    max-width: 100%;
+}
+.header {
+ font-family: "Roboto", Arial, sans-serif;
+    
+}
+.header .container{
+    display: flex; 
+    align-items: center;
+    border: 2px solid #000000;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.header-nav ul{
+    display: -webkit-flex; 
+    display: flex;
+    font-size: 17px;
+    list-style: none;
+    margin: 20px;  
+    
+}
+.header-nav ul a{
+    text-decoration: none;
+    margin: 16px;
+}
+.header-right{
+    display: flex;
+    margin-top: 24px;
+    border: 2px solid #000000;
+    margin-left: auto;
+    width: 288px;
+    position: relative;
+}
+.header-search form{
+/* opacity: 0; */
+/*visibility: hidden;*/
+transition: all 300ms; 
+margin-top: 40px;
+position: absolute;
+height: 85px;
+width: 345px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: cyan;
+}
+
+.header-search form [type="text"]{
+
+background-color: red;
+height: 50px;
+width: 314px;
+}
+
+
+.header-search form [type="submit"]{
+display: none;
+}
+
+
+.header-search{
+display: block;
+background-color: #fff;
+border: 2px solid;
+height: 35px;
+width: 35px;
+border-radius: 50%;
+margin-left: 10px;
+flex-shrink: 0;
+z-index: 10;
+position: relative;
+}
+.header-userlogin{
+display: block;
+background-color: #fff;
+border: 2px solid;
+height: 35px;
+width: 95px;
+border-radius: 30px;
+margin-left: 10px;
+flex-shrink: 0;
+}
+.header-userlogin form{
+opacity: 0;
+visibility: hidden;
+}
+.header-cart {
+    display: block;
+    background-color: #fff;
+    border: 2px solid;
+    height: 35px;
+    width: 95px;
+    border-radius: 30px;
+    margin-left: 10px;
+    flex-shrink: 0;   
+}
+.header-contacts{
+    flex-shrink: 1;
+    position: absolute;
+    right: 0;
+    margin-right: 28px;
+    top: calc(100% + 20px);
+    text-align: right;
+}
+.header-contacts p{
+    margin: 0;
+}
+.checkbox {
+    display: -webkit-flex; 
+    display: flex;
+}  
+.toplogo {
+    padding-top: 10px;
+    padding-left: 27px;
+}
+.item-list {
+    display: block
+    width: 1150px;
+}
+footer {
+    display: -webkit-flex; 
+    display: flex;   
+}
+.icon-smm {
+    display: -webkit-flex; 
+    display: flex;
+    list-style-type: none;
+}
+.icon-smm li {
+margin: 10px;
+}
+
+.header-search:hover form{
+   visibility: visible;
+   opacity: 1;
+}
+
