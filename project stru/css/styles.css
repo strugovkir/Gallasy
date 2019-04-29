@@ -37,9 +37,8 @@ position: relative;
     font-size: 16px;
     list-style: none;
     margin: auto;
-   
-
 }
+
 .nav-list {
 padding-left: 0;
 }
@@ -317,41 +316,51 @@ content: '';
     justify-content: space-between;
 }
 
-/*.catalog .item {
-    height: 280px;
-    box-sizing: border-box;
-    padding: 0;
-    position: relative;
-    margin-right: 20px;
-    border: 2px solid;
-    margin-top: 60px;
-
-}*/
-
 .catalog .item{
-    width: 267px;
+    width: 294px;
     box-sizing: border-box;
     padding: 0;
     position: relative;
     align-content: center;
     padding-bottom:  40px;
-  
+     
+}
+.item img {
+    margin: 0 15px;
+     max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    padding: 0;
+       
+}
+.catalog .item-title{
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    margin: 10px;
+    text-decoration-line: none;
+    z-index: 10;
+    
 }
 .item::before {
 content: '';
 display: block;
-width: 267px;
+width: 294px;
 background-color: rgba(0, 0, 0, 0.2);
-height: calc(100% + 66px);
+height: calc(100% + 45px);
 position: absolute;
 visibility: hidden;
 opacity: 0;
+text-decoration: none;
+
 }
 
 .item:hover::before,
 .item:hover .item-full-link{
 visibility: visible;
 opacity: 1;
+text-decoration: none;
 }
 .catalog .item-img-wrapper{
     width: 267px;
@@ -359,14 +368,6 @@ opacity: 1;
     margin-bottom: 16px;
 }
 
-.catalog .item-title{
-    font-size: 16px;
-    color: #ffffff;
-    text-align: center;
-    margin: 10px;
-    text-decoration-line: none;
-    
-}
 
 .catalog .item-price {
         font-size: 45px;
@@ -375,6 +376,42 @@ opacity: 1;
         text-shadow: 3px 2px 6px gray;
         bottom: 40px;
         font-weight: bold;
+}
+.item-quick-link{
+    margin: auto;
+    box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
+    text-align: center;
+    display: block;
+    width: 200px;
+    position: absolute;
+    left: 45px;
+    transition: all .35s;
+    height: 45px;
+    visibility: hidden;
+    opacity: 0;  
+    line-height: 45px;
+   font-size: 16px;
+   font-weight: bold;
+   color: white;
+   text-decoration: none;
+   border-radius: 15px;
+   
+}
+.item a{
+   text-decoration: none;
+
+}
+
+.item:hover::before,
+.item:hover .item-quick-link {
+  visibility: visible;
+  opacity: 1;
+  z-index: 10;
+
+  
+}
+.item:hover .item-quick-link {
+  background-color: #f06441;
 }
     
 /*.catalog .title-item {
